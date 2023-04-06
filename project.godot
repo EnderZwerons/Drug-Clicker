@@ -16,6 +16,10 @@ run/main_scene="res://meth.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://drug clicker.png"
 
+[autoload]
+
+AudioHandler="*res://AudioHandler.gd"
+
 [rendering]
 
 renderer/rendering_method="mobile"

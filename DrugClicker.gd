@@ -2,7 +2,7 @@ extends Control
 
 const Item = preload("res://Item.gd")
 
-var itemArray = [Item.new("Marajuana", 10), Item.new("Cocaine", 25), Item.new("Methamphetamine", 50), Item.new("Heroin", 100)]
+var itemArray = [Item.new("Marijuana", 10), Item.new("Cocaine", 25), Item.new("Methamphetamine", 50), Item.new("Heroin", 100)]
 
 var labelArray = []
 
@@ -45,8 +45,7 @@ func GetItemByName(itemName:String) -> Item:
 	
 			
 func GlobalBtnBehaviour():
-	$BtnSound.play()
-	
+	AudioHandler.playfromstream(preload("res://drugbutton.wav"))
 	
 func Buy(item:Item) -> bool:
 	if item.amount >= item.upgradeCost * item.upgradedAmount:
