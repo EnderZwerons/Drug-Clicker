@@ -1,24 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://di2lnb336iw0d"]
+[gd_scene load_steps=6 format=3 uid="uid://di2lnb336iw0d"]
 
 [ext_resource type="Script" path="res://DrugClicker.gd" id="1_xvad6"]
 [ext_resource type="AudioStream" uid="uid://b458laos3tipo" path="res://FullRender (26).wav" id="2_l8muw"]
-[ext_resource type="AudioStream" uid="uid://bmh7jyf4kwem8" path="res://drugbutton.wav" id="3_6hwml"]
 [ext_resource type="Texture2D" uid="uid://8b72w0osrlue" path="res://DRUGCLICERK.png" id="4_5qgyp"]
+[ext_resource type="FontFile" uid="uid://di2sxi3c5v0xh" path="res://slapstick.ttf" id="5_onkpk"]
 [ext_resource type="Texture2D" uid="uid://ddfrufrppx4ky" path="res://DRUGCLICERKbtn.png" id="5_tr68g"]
-
-[sub_resource type="SystemFont" id="SystemFont_372rd"]
-font_names = PackedStringArray("SF Slapstick Comic")
-
-[sub_resource type="LabelSettings" id="LabelSettings_0rx2m"]
-font = SubResource("SystemFont_372rd")
-font_size = 10
-
-[sub_resource type="SystemFont" id="SystemFont_3g06t"]
-font_names = PackedStringArray("SF Slapstick Comic")
-
-[sub_resource type="LabelSettings" id="LabelSettings_6jpgf"]
-font = SubResource("SystemFont_3g06t")
-font_size = 30
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -32,34 +18,32 @@ stream = ExtResource("2_l8muw")
 volume_db = -8.874
 autoplay = true
 
-[node name="BtnSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_6hwml")
-volume_db = -5.622
-
 [node name="BG" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1153.0
 offset_bottom = 646.0
 texture = ExtResource("4_5qgyp")
 expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="lol!" type="Label" parent="."]
 layout_mode = 0
-offset_left = 975.0
-offset_top = 25.0
-offset_right = 1210.0
-offset_bottom = 48.0
+offset_left = 887.0
+offset_top = 29.0
+offset_right = 1122.0
+offset_bottom = 52.0
+theme_override_fonts/font = ExtResource("5_onkpk")
 text = "lol this is the bug heroes font!"
-label_settings = SubResource("LabelSettings_0rx2m")
 
 [node name="Indicator_Marajuana" type="Label" parent="."]
 layout_mode = 0
 offset_left = 158.0
 offset_top = 247.0
-offset_right = 393.0
+offset_right = 296.0
 offset_bottom = 273.0
-text = "Marajuana"
-label_settings = SubResource("LabelSettings_6jpgf")
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
+text = "Marijuana"
 
 [node name="Marajuana_Obtain" type="TextureButton" parent="Indicator_Marajuana"]
 layout_mode = 0
@@ -77,12 +61,14 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Marajuana/Marajuana_Obtain"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 9.0
-offset_right = 166.0
-offset_bottom = 20.0
+offset_top = -1.0
+offset_right = 74.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "oBTAIN"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Marajuana_Upgrade" type="TextureButton" parent="Indicator_Marajuana/Marajuana_Obtain"]
 layout_mode = 0
@@ -99,12 +85,15 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Marajuana/Marajuana_Obtain/Marajuana_Upgrade"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 163.0
-offset_bottom = 20.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 70.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "Upgrade"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ItemValue_0" type="Label" parent="Indicator_Marajuana"]
 layout_mode = 0
@@ -112,17 +101,19 @@ offset_left = 59.0
 offset_top = 29.0
 offset_right = 294.0
 offset_bottom = 55.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "0"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Indicator_Cocaine" type="Label" parent="."]
 layout_mode = 0
 offset_left = 371.0
 offset_top = 245.0
-offset_right = 606.0
+offset_right = 469.0
 offset_bottom = 271.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "Cocaine"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Cocaine_Obtain" type="TextureButton" parent="Indicator_Cocaine"]
 layout_mode = 0
@@ -140,12 +131,14 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Cocaine/Cocaine_Obtain"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 9.0
-offset_right = 166.0
-offset_bottom = 20.0
+offset_left = 1.0
+offset_right = 70.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "oBTAIN"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Cocaine_Upgrade" type="TextureButton" parent="Indicator_Cocaine/Cocaine_Obtain"]
 layout_mode = 0
@@ -162,12 +155,15 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Cocaine/Cocaine_Obtain/Cocaine_Upgrade"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 163.0
-offset_bottom = 20.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 69.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "Upgrade"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ItemValue_1" type="Label" parent="Indicator_Cocaine"]
 layout_mode = 0
@@ -175,8 +171,9 @@ offset_left = 44.0
 offset_top = 32.0
 offset_right = 279.0
 offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "0"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Indicator_Methamphetamine" type="Label" parent="."]
 layout_mode = 0
@@ -184,8 +181,9 @@ offset_left = 523.0
 offset_top = 245.0
 offset_right = 758.0
 offset_bottom = 271.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "Methamphetamine"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Methamphetamine_Obtain" type="TextureButton" parent="Indicator_Methamphetamine"]
 layout_mode = 0
@@ -203,12 +201,15 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Methamphetamine/Methamphetamine_Obtain"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 9.0
-offset_right = 166.0
-offset_bottom = 20.0
+offset_left = 3.0
+offset_top = -1.0
+offset_right = 71.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "oBTAIN"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Methamphetamine_Upgrade" type="TextureButton" parent="Indicator_Methamphetamine/Methamphetamine_Obtain"]
 layout_mode = 0
@@ -225,12 +226,15 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Methamphetamine/Methamphetamine_Obtain/Methamphetamine_Upgrade"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 163.0
-offset_bottom = 20.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 72.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "Upgrade"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ItemValue_2" type="Label" parent="Indicator_Methamphetamine"]
 layout_mode = 0
@@ -238,17 +242,19 @@ offset_left = 100.0
 offset_top = 32.0
 offset_right = 335.0
 offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "0"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Indicator_Heroin" type="Label" parent="."]
 layout_mode = 0
 offset_left = 850.0
 offset_top = 244.0
-offset_right = 1085.0
+offset_right = 936.0
 offset_bottom = 270.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "Heroin"
-label_settings = SubResource("LabelSettings_6jpgf")
 
 [node name="Heroin_Obtain" type="TextureButton" parent="Indicator_Heroin"]
 layout_mode = 0
@@ -266,12 +272,14 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Heroin/Heroin_Obtain"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 9.0
-offset_right = 166.0
-offset_bottom = 20.0
+offset_top = -1.0
+offset_right = 70.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "oBTAIN"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Heroin_Upgrade" type="TextureButton" parent="Indicator_Heroin/Heroin_Obtain"]
 layout_mode = 0
@@ -288,12 +296,15 @@ stretch_mode = 0
 
 [node name="Label6" type="Label" parent="Indicator_Heroin/Heroin_Obtain/Heroin_Upgrade"]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 163.0
-offset_bottom = 20.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 70.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 18
 text = "Upgrade"
-label_settings = SubResource("LabelSettings_0rx2m")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ItemValue_3" type="Label" parent="Indicator_Heroin"]
 layout_mode = 0
@@ -301,5 +312,6 @@ offset_left = 38.0
 offset_top = 31.0
 offset_right = 273.0
 offset_bottom = 57.0
+theme_override_fonts/font = ExtResource("5_onkpk")
+theme_override_font_sizes/font_size = 30
 text = "0"
-label_settings = SubResource("LabelSettings_6jpgf")
