@@ -1,11 +1,12 @@
 bdbec74c6e5bd72edee867077d70896c
-::res://::1679936579
+::res://::1680773299
 abtn.png::CompressedTexture2D::5720019849848933199::1679610102::1679610103::1::::<><>::
 clickergamebg.png::CompressedTexture2D::964658534391720366::1679609776::1679609777::1::::<><>::
+drug clicker.png::CompressedTexture2D::5170796064636462805::1680772945::1680773301::1::::<><>::
 drugbutton.wav::AudioStreamWAV::3245097737157864953::1679622568::1679622568::1::::<><>::
 DRUGCLICERK.png::CompressedTexture2D::2320288572807732608::1679622235::1679622235::1::::<><>::
 DRUGCLICERKbtn.png::CompressedTexture2D::7381218665099767080::1679622235::1679622235::1::::<><>::
-DrugClicker.gd::GDScript::-1::1679641687::0::1::::<>Control<>::
+DrugClicker.gd::GDScript::-1::1679936643::0::1::::<>Control<>::
 DrugClicker_MethTheme.wav::AudioStreamWAV::4808273064925184764::1679615235::1679615505::1::::<><>::
 export_presets.cfg::TextFile::-1::1679643951::0::1::::<><>::
 FullRender (26).wav::AudioStreamWAV::4485851808795354052::1679622402::1679644143::1::::<><>::
@@ -14,4 +15,5 @@ Item.gd::GDScript::-1::1679641332::0::1::::Item<>RefCounted<>::
 meth bag.png::CompressedTexture2D::135888692025616230::1679610479::1679610479::1::::<><>::
 meth.tscn::PackedScene::7777202198876203741::1679656006::0::1::::<><>::res://DrugClicker.gd<>uid://b458laos3tipo<>uid://bmh7jyf4kwem8<>uid://8b72w0osrlue<>uid://ddfrufrppx4ky
 mrtherthast.wav::AudioStreamWAV::3629440188693780151::1679615858::1679615858::1::::<><>::
+README.md::TextFile::-1::1680772414::0::1::::<><>::
 upade.wav::AudioStreamWAV::5412442698275280978::1679616302::1679616302::1::::<><>::

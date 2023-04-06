@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Godoughclickergame"
+config/name="Drug Clicker"
+config/description="Disclaimer: \"Drug Clicker\" is an open-source joke game intended for humor purposes only. It does not promote, condone, or endorse the use of illicit substances or any illegal activities. Also there's a lot of unused content in the game so re-implement it if you want."
 run/main_scene="res://meth.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://drug clicker.png"
 
 [rendering]
 
